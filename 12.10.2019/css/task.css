@@ -1,0 +1,58 @@
+.animate {
+    width: 50px;
+    padding: 5px 0px;
+    background: chartreuse;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    animation-name: test;
+    position: relative;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: 0;
+        transform: rotate(30deg);
+        background-color: darkturquoise;
+    }
+    50% {
+        left: 400px;
+        transform: rotate(0deg);
+        background-color: red;
+    }
+    100% {
+        left: 0;
+        transform: rotate(-360deg);
+        background: chartreuse;
+    }
+}
+
+div {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.RotateY {
+    animation-name: RotateY;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes RotateY {
+    From {}
+    To {
+        transform: rotateY(180deg);
+    }
+}
